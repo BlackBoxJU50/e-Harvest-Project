@@ -1,0 +1,181 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.b1 {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Container for the blurred background */
+.background-container {
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(/ai-generated-8708404_1280.webp) no-repeat center center fixed;
+    background-size: cover;
+    filter: blur(4px); /* Blur effect */
+    z-index: -1;
+}
+
+/* Optional semi-transparent overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent overlay */
+    z-index: 0;
+}
+.content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: white;
+    padding-top: 20vh; /* Adjust as necessary */
+    font-size: 24px;
+}
+
+/* Main Content Styles */
+.main-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #20dd27;
+    padding: 10px 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+}
+
+.brand-name {
+    font-size: 24px;
+    color: white;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.nav-items {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-items li {
+    position: relative;
+    margin: 0 15px;
+}
+
+.nav-items a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.nav-items a:hover {
+    background-color: #388e3c;
+    border-radius: 5px;
+}
+
+/* Dropdown Menu */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #4CAF50;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content li {
+    width: 150px;
+}
+
+.dropdown-content a {
+    padding: 10px 15px;
+    display: block;
+    white-space: nowrap;
+}
+
+.dropdown-content a:hover {
+    background-color: #388e3c;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Main content */
+.main-content {
+    text-align: center;
+    padding: 50px;
+}
+
+.main-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.main-content p {
+    font-size: 20px;
+}
+/* Add keyframes for fade-in effect */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply the animation to each section */
+.fade-in {
+    opacity: 0;
+    animation: fadeInUp 1s ease forwards; /* Duration of animation */
+}
+
+.fade-in-1 {
+    animation-delay: 0.2s; /* Delayed start for each element */
+}
+
+.fade-in-2 {
+    animation-delay: 0.4s;
+}
+
+.fade-in-3 {
+    animation-delay: 0.6s;
+}
+
+.fade-in-4 {
+    animation-delay: 0.8s;
+}
+

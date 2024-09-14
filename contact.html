@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - E-Harvest</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-container"></div>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo ml-[30px]">
+          <img  src="/ai-generated-8708404_1280.webp" alt="Logo">
+            <span class="brand-name text-orange-300 text-3xl"><span class="text-4xl "><i>e</span>-Harvest</span></i></span>
+        </div>
+        <ul class="nav-items">
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="service.html">Services</a> <!-- Linked to service.html -->
+                <ul class="dropdown-content">
+                    <li><a href="#">Purchase Product</a></li>
+                    <li><a href="#">Today Price</a></li>
+                    <li><a href="#">Payement</a></li>
+                </ul>
+            </li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- Contact Content -->
+    <section class="main-content fade-in fade-in-1">
+        <h1>Contact Us</h1>
+        <p>If you have any questions, feel free to reach out to us. We're here to help!</p>
+        
+        <h2>Our Contact Information</h2>
+        <ul>
+            <li>Email: <a href="mailto:info@e-harvest.com">info@e-harvest.com</a></li>
+            <li>Phone: +123-456-7890</li>
+            <li>Address: 123 Green Farm Road, Agriculture City, 56789</li>
+        </ul>
+        
+        <h2>Send Us a Message</h2>
+        <form action="#" method="POST">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+            <input type="submit" value="Send Message">
+        </form>
+    </section>
+
+</body>
+</html>
